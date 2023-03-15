@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<style>
+body
+.barcontainer {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 5px 5px 0 0;
+  width: 80%;
+  margin: 0 auto;
+  min-height: 25vw;
+  max-height: 50vw;
+  min-width: 40%;
+  max-width: 60%;
+  z-index: 1;
+}
+
+.barcontainerheader {
+  display: inline;
+  position: absolute;
+  width: 100%;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  background: #663399;
+  border-bottom: 3px solid black;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 0 black;
+  z-index: 0;
+}
+
+.bar {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  border: 1px solid black;
+  border-radius: 6px 6px 0 0;
+  background: #663399;
+  width: 10%;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  box-shadow: 4px 0 8px #888;
+}
+
+.barlabel {
+  position: absolute;
+  border-top: 2px solid black;
+  background: #888;
+  bottom: 0;
+  width: 100%;
+  text-shadow: 1px 1px 0px black;
+  color: white;
+}
+
+.bar:nth-child(2) {
+  left: 25%;
+}
+
+.bar:nth-child(3) {
+  left: 45%;
+}
+
+.bar:nth-child(4) {
+  left: 70%;
+}
+
+</style>
+<body>
+    <div class='barcontainer'>
+        <div class='barcontainerheader'>
+          Bar Plot
+        </div>
+        <div class='bar' style='height: 30%'>
+          30
+          <div class='barlabel'>
+            30%
+          </div>
+        </div>
+        <div class='bar' style='height: 40%'>
+          40
+          <div class='barlabel'>
+            40%
+          </div>
+        </div>
+        <div class='bar' style='height: 80%'>
+          80
+          <div class='barlabel'>
+            80%
+          </div>
+        </div>
+        
+        </div>
+      </div>
+</body>
+</html>
